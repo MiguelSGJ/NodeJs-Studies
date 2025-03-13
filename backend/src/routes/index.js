@@ -1,11 +1,13 @@
-const router = require('express').Router()
+import { Router } from "express";
 
-router.get('/', (req, res) => {
-    res.send({
-        sucess: true,
-        statusCode: 200,
-        body: "Hello World!"
-    })
-})
+const router = Router();
 
-module.exports = router;
+router.get("/", (req, res) => {
+  res.send({
+    sucess: true,
+    statusCode: 200,
+    body: "Hello World!",
+  });
+});
+
+export default router;
